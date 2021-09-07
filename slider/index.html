@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .selection {
+            border: 5px solid darkgreen !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center">Search Image for create slider</h2>
+    <hr>
+    <section class="w-50 mx-auto">
+        <input id="input-field" value="cat" placeholder="search here" class="form-control" type="text">
+    </section>
+
+    <section class="container mt-4">
+        <div id="header" class="d-none justify-content-around align-items-center mb-4">
+            <h2>Select image for create slider</h2>
+            <input id="input-time" placeholder="Transition Time" class="form-control w-25" type="text">
+            <button id="slider-creator" class="btn btn-primary pt-1">Create Slider</button>
+        </div>
+        <div id="photo-container" class="d-flex flex-wrap">
+
+        </div>
+        <section id="slider" class="container d-none" >
+            <img style="width: 100%;" id="slider-image" src="" alt="">   
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
